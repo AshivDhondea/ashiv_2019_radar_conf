@@ -1,0 +1,57 @@
+%% Common material for slides.
+%% Version 0.0 by MRI 8/05/12
+%% Version 0.1 updated by MRI to sort out \subcaption.
+
+
+%\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{xcolor}
+
+%\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+
+% Special colours
+\setbeamercolor{uppercol}{fg=black,bg=blue!40}
+\setbeamercolor{lowercol}{fg=black,bg=blue!10}
+
+
+% Setup appearance:
+
+\usetheme{Singapore}
+\usefonttheme[onlylarge]{structurebold}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+
+
+\pgfdeclareimage[height=1.2cm]{university-logo}{figs/UCT_logocircless_t}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+\setbeamertemplate{footline}[text line]{
+\parbox{\linewidth}{\vspace*{-8pt}\lecNo\version\hfill\insertpagenumber~of~\pageref{lastpg}}}
+%\parbox{\linewidth}{\vspace*{-8pt}\version\hfill\insertshortauthor\hfill\insertpagenumber~of~\pageref{lastpg}}}
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{bibliography item}[text]  % to obtain a numbered bibliography
+
+
+
+% Standard packages
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{units}
+\usepackage{algorithmic}
+%\usepackage{multirow}
+\usepackage{lmodern}% http://ctan.org/pkg/lm
+
+%\usepackage{tikz}
+%\usetikzlibrary{arrows}
+%\tikzstyle{block}=[draw opacity=0.7,line width=1.4cm]
+
+\usepackage{url}
+\usepackage{textcomp}
+% \usepackage{beamerthemesplit} 
